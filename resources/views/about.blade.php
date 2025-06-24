@@ -3,6 +3,10 @@
 @section('title')Страница про нас@endsection
 
 @section('main_content')
-    <h1>Pages obout</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad delectus deleniti ducimus, earum ex fugit, harum, hic illum incidunt laborum molestias omnis praesentium quas quis quod rerum sed similique voluptate.</p>
+    <div class="col-9 ps-5 pt-5 mt-5">
+        <h1 class="ps-5">О нас</h1>
+        <p class="ps-5">С 2021 года мы предлагаем нашим клиентам уникальную возможность приобретать товары в рассрочку сроком от 3 месяцев до 2 лет. На сегодняшний день у нас более 100 тысяч довольных клиентов по всей стране, которые выбирают нас за выгодные условия и отличное обслуживание.
+
+            Торговая марка Simurg — ваш надежный партнер на рынке электроники и бытовой техники.</p>
+    </div>
 @endsection

@@ -15,14 +15,16 @@ class MainController extends Controller
     }
 
     public function review() {
-        return view('review');
+        $reviews = new Contact();
+        return view('review', ['review' => $reviews->all()]);
+//        return view('review');
     }
 
     public function review_check(Request $request) {
         $valid = $request->validate([
             'email' => 'required|min:4|max:100',
             'subject' => 'required|min:4|max:100',
-            'message' => 'required|min:15|max:500'
+            'message' => 'required|min:10|max:500'
         ]);
 
         $review = new Contact();

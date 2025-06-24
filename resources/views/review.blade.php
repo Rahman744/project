@@ -22,4 +22,13 @@
         <textarea name="message" id="message" placeholder="Введите сообщение" class="form-control"></textarea><br>
         <button type="submit" class="btn btn-success">Отправить</button>
     </form>
+    <br>
+    <h1>Все отзывы</h1>
+    @foreach($review as $el)
+        <div class="alert alert-warning">
+            <h6>{{ $el->email }}</h6>
+            <h6>{{ $el->subject }}</h6>
+            <h6>{{ $el->message }}</h6>
+        </div>
+    @endforeach
 @endsection
